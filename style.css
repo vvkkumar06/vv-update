@@ -140,9 +140,6 @@ footer{
     margin-top:50px;
     color:#fff;
 }
-.contact-form{
-    border-right:2px dotted #ccc;
-}
 .contact{
     padding-top:100px;
     padding-bottom:100px;
@@ -175,7 +172,7 @@ footer{
         border-right:none;
     }
     .navbar-brand{
-        font-size:24px;
+        font-size:28px;
     }
     .design1{
         width:350px;

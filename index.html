@@ -13,7 +13,7 @@
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 <!-- header -->
-  <header class="container">
+  <header class="container" id="header">
         
         <div class="design1"></div>
         <nav class="navbar navbar-expand-lg navbar-light">
@@ -160,7 +160,7 @@
              <hr>
              <h3 class="display-3">Looking for a job?</h3>
              <h4 class="dislay-4">Work with us in an awesome great learning environment</h4>
-             <h5 class="display-5"></h5>
+             <h5 class="lead mt-5">Work as Designer, developer, content writer</h5>
     </section> <!--career ends-->
   
  <!-- Contact -->
@@ -216,8 +216,36 @@
 
 
   <!-- scripts  -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+        $(document).ready(function(){
+                $(".navbar-nav li a[href^='#']").on('click', function(e) {
+
+                // This sets the hash
+                var target;
+                target = this.hash;
+
+                // Prevent default anchor click behavior
+                e.preventDefault();
+
+
+                // Animate The Scroll
+                $('html, body').animate({
+                scrollTop: $(this.hash).offset().top
+                }, 800, function(){
+
+                // Adds hash to end of URL
+                return window.history.pushState(null, null, target);
+
+                });
+
+                });
+        });
+
+</script>
+
 </body>
 </html>
