@@ -11,12 +11,12 @@
     <link rel="stylesheet" href="style.css">
   
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body>
 <!-- header -->
   <header class="container" id="header">
         
         <div class="design1"></div>
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
                 <!-- Brand -->
                 <a class="navbar-brand" href="#">VKCool Designs</a>
               
@@ -27,7 +27,7 @@
               
                 <!-- Navbar links -->
                 <div class="collapse navbar-collapse " id="collapsibleNavbar">
-                  <ul class="navbar-nav ml-3">
+                  <ul class="navbar-nav ml-3" data-spy="affix">
                     <li class="nav-item">
                       <a class="nav-link" href="#about">About</a>
                     </li>
@@ -45,7 +45,8 @@
                     </li> 
                   </ul>
                 </div> 
-        </nav> <!--Navbar Ends-->
+        </nav> <!--Navbar Ends-->                       
+      
   </header>
   
   
@@ -70,16 +71,16 @@
                 <div class="col-12">
                                 <ul class="nav flex-column services">
                                                 <li class="nav-item">
-                                                  <a class="nav-link" href="#">UI/UX Design</a>
+                                                  <a class="nav-link">UI/UX Design</a>
                                                 </li>
                                                 <li class="nav-item">
-                                                  <a class="nav-link" href="#">Wordpress Development</a>
+                                                  <a class="nav-link">Wordpress Development</a>
                                                 </li>
                                                 <li class="nav-item">
-                                                  <a class="nav-link" href="#">Single Page Application</a>
+                                                  <a class="nav-link">Single Page Application</a>
                                                 </li>
                                                 <li class="nav-item">
-                                                  <a class="nav-link " href="#">Custom Theme Development</a>
+                                                  <a class="nav-link ">Custom Theme Development</a>
                                                 </li>
                                 </ul>
                 </div>
@@ -117,7 +118,32 @@
                                 </div>
                                                 
                          </div>
-                       
+                
+                        <div class="col-md-4 col-12">
+                                        <div class="card">
+                                                <div class="card-header"> Word Finder Android App</div>  
+                                                <img class="card-img-top" src="images/p4.jpg" alt="Android App">
+                                                     
+                                        </div>
+                                                        
+                        </div>
+                        <div class="col-md-4 col-12">
+                                        <div class="card">
+                                                <div class="card-header">Inc(RED)ible Framework</div>  
+                                                <img class="card-img-top" src="images/p5.jpg" alt="FrontEnd Framework">
+                                                     
+                                        </div>
+                                                        
+                        </div>
+                        <div class="col-md-4 col-12">
+                                <div class="card">
+                                        <div class="card-header">Study Wrath</div>  
+                                        <img class="card-img-top" src="images/p6.jpg" alt="Study Portal">
+                                             
+                                </div>
+                                                
+                         </div>
+                         
              </div>
 
     </section>
@@ -220,32 +246,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-<script type="text/javascript">
-        $(document).ready(function(){
-                $(".navbar-nav li a[href^='#']").on('click', function(e) {
-
-                // This sets the hash
-                var target;
-                target = this.hash;
-
-                // Prevent default anchor click behavior
-                e.preventDefault();
-
-
-                // Animate The Scroll
-                $('html, body').animate({
-                scrollTop: $(this.hash).offset().top
-                }, 800, function(){
-
-                // Adds hash to end of URL
-                return window.history.pushState(null, null, target);
-
-                });
-
-                });
-        });
-
-</script>
+<script type="text/javascript" src="script.js"></script>
 
 </body>
 </html>
