@@ -1,0 +1,39 @@
+
+body{
+    background: #eee;
+    border:20px solid #fff !important;
+    margin:0px;
+    font-family: 'Josefin Slab', serif;
+    letter-spacing: 0.3em;
+}
+header{
+    text-transform: uppercase;
+}
+nav{
+    margin-top:30px;
+    margin-left:10px;
+}
+li.nav-item a.nav-link{
+    text-decoration:none;
+    color: #000;
+    font-weight: 800;
+    margin-left: 50px;
+}
+li.nav-item a.nav-link:hover{
+    color: #23e !important;
+    border-bottom:5px solid #23e;
+}
+.navbar-brand{
+    text-decoration: none;
+    color:#333;
+    font-weight: 1000;
+    font-size: 34px;
+
+}
+.navbar-brand:hover{
+ color:#e23 !important;
+}
+ul.navbar-nav{
+ 
+    margin-right:0 !important
+}
