@@ -2,19 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>VKCool Designs</title>
+    <title>VKCool Designs | Website Design And Development</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Oswald" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" href="style.css">
   
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 <!-- header -->
-  <header>
+  <header class="container">
+        
         <div class="design1"></div>
         <nav class="navbar navbar-expand-lg navbar-light">
                 <!-- Brand -->
@@ -27,7 +27,7 @@
               
                 <!-- Navbar links -->
                 <div class="collapse navbar-collapse " id="collapsibleNavbar">
-                  <ul class="navbar-nav">
+                  <ul class="navbar-nav ml-3">
                     <li class="nav-item">
                       <a class="nav-link" href="#about">About</a>
                     </li>
@@ -48,89 +48,167 @@
         </nav> <!--Navbar Ends-->
   </header>
   
-  <!-- about -->
-  <section class="container about">
-        
+  
+  <section class="container showcase">
         <h1 class="vk-title"> Website 
                     <span style="color:#e32">D</span><span style="color:#23e">esign</span>
                     </span> 
                     and 
                     <span style="color:#23e">D</span><span style="color:#e32">evelopment</span></h1>
                   
-        <p class="vk-description lead">An awesome cool looking website design <a href="#work" class="vk-btn">See Our Works</a></p>
+        <p class="vk-description lead">An awesome cool looking website design </p>
+        <a href="#work" class="vk-btn">See Our Works</a>
   </section>
-  <section class="vk-design" id="about">
-        <h2 class="text-center">What We Do</h2>
 
+  <!-- about -->
+
+  <section class="container-fluid about-main" id="about">
+        <h2 class="text-center">What We Do</h2>
+        <hr>
+        <section class="about text-center">
+                <h3 class="display-3 about-title">Get your website ready in few hours.</h3> 
+                <div class="col-12">
+                                <ul class="nav flex-column services">
+                                                <li class="nav-item">
+                                                  <a class="nav-link" href="#">UI/UX Design</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                  <a class="nav-link" href="#">Wordpress Development</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                  <a class="nav-link" href="#">Single Page Application</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                  <a class="nav-link " href="#">Custom Theme Development</a>
+                                                </li>
+                                </ul>
+                </div>
+
+        </section>
     </section>
   <!-- Work -->
  
-    <section class="vk-design vk-red" id="work">
+    <section class="container-fluid work" id="work">
             <h2 class="text-center">What We Have Done</h2>
+            <hr>
+            <div class="row text-center text-lg-left">
+
+                        <div class="col-md-4 col-12">
+                                        <div class="card">
+                                                <div class="card-header"> MEAN Auth Application</div>  
+                                                <img class="card-img-top" src="images/p3.jpg" alt="MEAN Application">
+                                                     
+                                        </div>
+                                                        
+                        </div>
+                        <div class="col-md-4 col-12">
+                                        <div class="card">
+                                                <div class="card-header">Search Nearby MEAN App</div>  
+                                                <img class="card-img-top" src="images/p2.jpg" alt="Search Nearby">
+                                                     
+                                        </div>
+                                                        
+                        </div>
+                        <div class="col-md-4 col-12">
+                                <div class="card">
+                                        <div class="card-header"> Contact Manager MEAN App</div>  
+                                        <img class="card-img-top" src="images/p1.jpg" alt="Contact Manager">
+                                             
+                                </div>
+                                                
+                         </div>
+                       
+             </div>
 
     </section>
  
 
   <!-- Team -->
   
-    <section class="vk-design" id="team">
+    <section class="container-fluid team" id="team">
             <h2 class="text-center">Meet Our Family</h2>
+            <hr>
+            <div class="row text-center text-lg-left">
+
+                        <div class="col-md-4 col-6">
+                                <div class="card">
+                                        <img class="card-img-top" src="images/vivek.jpg" alt="Vivek Kumar">
+                                        <div class="card-footer">Vivek Kumar(Full Stack Developer)</div>
+                                </div>
+                        </div>
+                        <div class="col-md-4 col-6">
+                                <div class="card">
+                                        <img class="card-img-top" src="images/vivek1.jpg" alt="Vivek Kumar">
+                                        <div class="card-footer">Vivek Kumar(MEAN Stack Developer)</div>
+                                </div>
+                        </div>
+                        <div class="col-md-4 col-6">
+                                <div class="card">
+                                         <img class="card-img-top" src="images/vivek2.jpg" alt="Vivek Kumar">
+                                         <div class="card-footer">Vivek Kumar(UI Developer)</div>
+                                   </div>
+                        </div>
+                      
+        </div>
 
     </section><!--team ends-->
   
 
 <!-- Career -->
-     <section class="vk-design vk-red" id="career">
+     <section class="container-fluid text-center career" id="career">
             <h2 class="text-center">Join Our Awesome Team</h2>
-
+             <hr>
+             <h3 class="display-3">Looking for a job?</h3>
+             <h4 class="dislay-4">Work with us in an awesome great learning environment</h4>
+             <h5 class="display-5"></h5>
     </section> <!--career ends-->
   
  <!-- Contact -->
-    <section class="contact" id="contact">
-            <h2 class="text-center">Where To Find Us</h2>
-        
-        <div class="contact-us container">
-            <div class="row">
-                <div class="col-md-6 contact-form">
-                        <form action="#">
-                                <div class="form-group">
-                                    <i class="fa fa-user"></i>
-                                    <span>Name</span>
-                                    <input type="text" class="form-control" name="name">
-                                </div>
-                
-                                <div class="form-group">
-                                        <i class="fa fa-envelope"></i>
-                                        <span>Email</span>
-                                        <input type="text" class="form-control" name="email">
-                                </div>
-                
-                                <div class="form-group">
-                                        <i class="fa fa-comments"></i> 
-                                        <span>Message</span>
-                                        <input type="text" class="form-control" name="message">
-                                </div>
-                                <button class="btn btn-success btn-lg">Send</button>
-                        </form>
-
-                </div>
-                <div class="col-md-6 text-center">
-                    <h2 style="text-decoration:underline">Address</h2>
-                    <p>Flat No- 606/B, Suman Palace, Kankarbagh Patna.</p>
-                    <hr>
-                    <div class="mapouter">
-                        <div class="gmap_canvas">
-                            <iframe width="556" height="215" id="gmap_canvas" src="https://maps.google.com/maps?q=patna&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-                            </iframe>
-                         </div>
-                    </div>
-                </div>
+ <section class="contact container-fluid" id="contact">
+        <h2 class="text-center">Where To Find Us</h2>
+        <hr>
+    
+    <div class="contact-us">
+        <div class="row">
+            <div class="col-md-12 contact-form text-center">
+                    <form action="#">
+                            <center>
+                            <div class="form-group w-50">
+                                <i class="fa fa-user"></i>
+                                <span>Name</span>
+                                <input type="text" class="form-control" name="name">
+                            </div>
+            
+                            <div class="form-group w-50">
+                                    <i class="fa fa-envelope"></i>
+                                    <span>Email</span>
+                                    <input type="text" class="form-control" name="email">
+                            </div>
+            
+                            <div class="form-group w-50">
+                                    <i class="fa fa-comments"></i> 
+                                    <span>Message</span>
+                                    <input type="text" class="form-control" name="message">
+                            </div>
+                            <button class="btn btn-success btn-block w-50">Send</button>
+                            </center>
+                    </form>
 
             </div>
-    
-        </div>  <!-- Contact Us Form--ends-->
-           
-    </section> <!--Contact Us Section ends-->
+        </div>
+        <div class="row text-center mt-5">
+                <div class="col-12">
+                        <h2 style="text-decoration:underline">Address</h2>
+                        <p>Flat No- 606/B, Suman Palace, Kankarbagh Patna.</p>
+                                
+                </div>
+                
+        </div>
+
+
+    </div>  <!-- Contact Us Form--ends-->
+       
+</section> <!--Contact Us Section ends-->
 
   <footer >
       <p class="text-center mt-3">&copy;Copyright 2018 Vivek Kumar</p>
