@@ -1,3 +1,11 @@
+/*
+    Title: VKCool Designs
+    Author: Vivek Kumar
+    Author URL: vvkkumar06.github.io
+    License: MIT
+*/
+
+
 
 body{
     background: #fff;
@@ -76,6 +84,7 @@ h1.vk-title{
     background:rgba(10,10,200,0.8);
     color:#fff;
     border:none;
+   
     padding:10px;
     line-height:1.4em;
     cursor: pointer;
@@ -83,6 +92,8 @@ h1.vk-title{
 .vk-btn:hover{
     background:rgba(10,10,200,0.6);
     animation: vk-btn-ani 1s ease-in-out;
+    text-decoration: none;
+    color:#fff;
 }
 .vk-design{
     margin-top:80px !important;
@@ -92,10 +103,14 @@ h1.vk-title{
     background-color: #DFDBE5;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%239C92AC' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
     color:#000;
-    font-style: italic;
-    text-decoration-line:underline;
+  
     text-transform: capitalize;
     
+}
+
+.vk-design>h2{
+    text-decoration-line:underline;
+    font-style: italic;
 }
 @keyframes vk-btn-ani{
     0%   {margin-left: 0px}
@@ -118,11 +133,28 @@ footer{
     margin-top:50px;
     color:#fff;
 }
+.contact-form{
+    border-right:2px dotted #ccc;
+}
+.contact{
+    padding-top:100px;
+    padding-bottom:100px;
+}
+.contact>h2{
+    text-decoration-line: underline;
+}
+.contact-us{
+    margin-top:50px;
+}
 
-
-
-@media (max-width:576) {
+@media (max-width:576px) {
     .navbar-brand{
         font-size:20px;
     }
+    .mapouter{
+        visibility: hidden !important;
+    }
 }
+
+
+.mapouter{overflow:hidden;height:215px;width:600px;}.gmap_canvas {background:none!important;height:215px;width:556px;}
