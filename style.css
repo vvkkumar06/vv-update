@@ -28,11 +28,11 @@ header li.nav-item a.nav-link{
     font-weight: 800;
     position: relative;
 }
-header li.nav-item a.nav-link:hover{
+header li.nav-item a.nav-link:hover, header li.nav-item a.nav-link.active{
     color: #23e !important;
     position: relative;
 }
-header li.nav-item a.nav-link:hover::after{
+header li.nav-item a.nav-link:hover::after, header li.nav-item a.nav-link.active::after{
     position:absolute;
     content:'';
     padding:20px;

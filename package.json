@@ -1,0 +1,19 @@
+{
+  "name": "vkcool-design",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vvkkumar06/vkcool-design.git"
+  },
+  "author": "Sushil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vvkkumar06/vkcool-design/issues"
+  },
+  "homepage": "https://github.com/vvkkumar06/vkcool-design#readme"
+}
